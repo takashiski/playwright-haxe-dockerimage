@@ -105,5 +105,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	make \
 	g++ \
 	libc6-dev \
+	git-lfs \
+	&& git lfs install \
 	&& rm -rf /var/lib/apt/lists/*
 CMD ["haxe"]
